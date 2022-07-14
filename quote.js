@@ -1,6 +1,6 @@
-var BACK_SECTION_NAMES = [];
+var Back_Button = [];
 
-var FORM_TRACK_PATH = [];
+var Form_Data = [];
 
 var whichKindOfFule = "";
 var whatTypeOfBoiler = "";
@@ -44,7 +44,7 @@ function onClickSection1(val) {
     jQuery("#section2").show();
     jQuery("#section1").removeClass("active");
     jQuery("#section2").addClass("active");
-    FORM_TRACK_PATH.push("section1");
+    Form_Data.push("section1");
 
 }
 
@@ -53,40 +53,40 @@ function onClickSection2(val) {
     whatTypeOfBoiler = val;
     
     if (val == "Combi Boiler") {
-        BACK_SECTION_NAMES["section6"] = "section2";
+        Back_Button["section6"] = "section2";
         jQuery("#section2").hide();
         sessionStorage.setItem("whatTypeOfBoiler", whatTypeOfBoiler);
         jQuery("#section6").show();
         jQuery("#section2").removeClass("active");
         jQuery("#section6").addClass("active");
     } else if (val == "Back Boiler" || val == "No Boiler") {
-        BACK_SECTION_NAMES["section9"] = "section2";
+        Back_Button["section9"] = "section2";
         jQuery("#section2").hide();
         sessionStorage.setItem("whatTypeOfBoiler", whatTypeOfBoiler);
         jQuery("#section9").show();
         jQuery("#section2").removeClass("active");
         jQuery("#section9").addClass("active");
     } else {
-        BACK_SECTION_NAMES["section3"] = "section2";
+        Back_Button["section3"] = "section2";
         jQuery("#section2").hide();
         sessionStorage.setItem("whatTypeOfBoiler", whatTypeOfBoiler);
         jQuery("#section3").show();
         jQuery("#section2").removeClass("active");
         jQuery("#section3").addClass("active");
     }
-    FORM_TRACK_PATH.push("section2");
+    Form_Data.push("section2");
 }
 
 function onClickSection3(val) {
     console.log(val);
     whichTypeOfWaterTank = val;
-    BACK_SECTION_NAMES["section4"] = "section3";
+    Back_Button["section4"] = "section3";
     jQuery("#section3").hide();
     sessionStorage.setItem("whichTypeOfWaterTank", whichTypeOfWaterTank);
     jQuery("#section4").show();
     jQuery("#section3").removeClass("active");
     jQuery("#section4").addClass("active");
-    FORM_TRACK_PATH.push("section3");
+    Form_Data.push("section3");
 }
 
 function onClickSection4(val) {
@@ -95,7 +95,7 @@ function onClickSection4(val) {
     sessionStorage.setItem("whereConvertToCombiBoiler", whereConvertToCombiBoiler);
     if (whereConvertToCombiBoiler == "yes") {
         whereConvertToCombiBoilerYes = "Combi Boiler";
-        BACK_SECTION_NAMES["section5"] = "section4";
+        Back_Button["section5"] = "section4";
 
         jQuery("#section4").hide();
         sessionStorage.setItem("whereConvertToCombiBoilerYes", whereConvertToCombiBoilerYes);
@@ -104,7 +104,7 @@ function onClickSection4(val) {
         jQuery("#section5").addClass("active");
     } else {
         whereConvertToCombiBoilerYes = "no";
-        BACK_SECTION_NAMES["section4_1"] = "section4";
+        Back_Button["section4_1"] = "section4";
 
         jQuery("#section4").hide();
         sessionStorage.setItem("whereConvertToCombiBoilerYes", whereConvertToCombiBoilerYes);
@@ -113,7 +113,7 @@ function onClickSection4(val) {
         jQuery("#section4_1").addClass("active");
     }
 
-    FORM_TRACK_PATH.push("section4");
+    Form_Data.push("section4");
 }
 
 function onClickSection4_1(val) {
@@ -123,7 +123,7 @@ function onClickSection4_1(val) {
     jQuery("#section4_1").removeClass("active");
     jQuery("#section5").addClass("active");
 
-    BACK_SECTION_NAMES["section5"] = "section4_1";
+    Back_Button["section5"] = "section4_1";
 
     if (val == "yes") {
         upgradeToWaterCylinder = "yes";
@@ -133,19 +133,19 @@ function onClickSection4_1(val) {
         upgradeToWaterCylinder = "no";
         sessionStorage.setItem("upgradeToWaterCylinder", upgradeToWaterCylinder );
     }
-    FORM_TRACK_PATH.push("section4_1");
+    Form_Data.push("section4_1");
 }
 
 function onClickSection5(val) {
     console.log(val);
-    BACK_SECTION_NAMES["section6"] = "section5";
+    Back_Button["section6"] = "section5";
     outComeWater = val;
     jQuery("#section5").hide();
     
     jQuery("#section6").show();
     jQuery("#section5").removeClass("active");
     jQuery("#section6").addClass("active");
-    FORM_TRACK_PATH.push("section5");
+    Form_Data.push("section5");
 
 }
 
@@ -154,31 +154,31 @@ function onClickSection6(val) {
     newBoilerInDifferentPlace = val;
     sessionStorage.setItem("newBoilerInDifferentPlace", newBoilerInDifferentPlace);
     if (val == "Yes") {
-        BACK_SECTION_NAMES["section7"] = "section6";
+        Back_Button["section7"] = "section6";
         jQuery("#section6").hide();
         jQuery("#section7").show();
         jQuery("#section6").removeClass("active");
         jQuery("#section7").addClass("active");
     } else {
-        BACK_SECTION_NAMES["section9"] = "section6";
+        Back_Button["section9"] = "section6";
         jQuery("#section6").hide();
         jQuery("#section9").show();
         jQuery("#section6").removeClass("active");
         jQuery("#section9").addClass("active");
     }
-    FORM_TRACK_PATH.push("section6");
+    Form_Data.push("section6");
 }
 
 function onClickSection7(val) {
     console.log(val);
     whereIsCurrentBoiler = val;
     sessionStorage.setItem("whereIsCurrentBoiler", whereIsCurrentBoiler);
-    BACK_SECTION_NAMES["section8"] = "section7";
+    Back_Button["section8"] = "section7";
     jQuery("#section7").hide();
     jQuery("#section8").show();
     jQuery("#section7").removeClass("active");
     jQuery("#section8").addClass("active");
-    FORM_TRACK_PATH.push("section7");
+    Form_Data.push("section7");
 }
 
 function onClickSection8(place_name, cost) {
@@ -190,13 +190,13 @@ function onClickSection8(place_name, cost) {
     if (place_name == "Somewhere else") {
         document.location.href = "./manual-quote/";
     } else {
-        BACK_SECTION_NAMES["section9"] = "section8";
+        Back_Button["section9"] = "section8";
         jQuery("#section8").hide();
         jQuery("#section9").show();
         jQuery("#section8").removeClass("active");
         jQuery("#section9").addClass("active");
     }
-    FORM_TRACK_PATH.push("section8");
+    Form_Data.push("section8");
 }
 
 function onClickSection9(val) {
@@ -204,56 +204,56 @@ function onClickSection9(val) {
     bestDescribeYourHome = val;
     sessionStorage.setItem("bestDescribeYourHome", bestDescribeYourHome);
     if (val == "Flat") {
-        BACK_SECTION_NAMES["section10"] = "section9";
+        Back_Button["section10"] = "section9";
         jQuery("#section9").hide();
         jQuery("#section10").show();
         jQuery("#section9").removeClass("active");
         jQuery("#section10").addClass("active");
     } else {
-        BACK_SECTION_NAMES["section10"] = "section9";
+        Back_Button["section10"] = "section9";
         jQuery("#section9").hide();
         jQuery("#section10").show();
         jQuery("#section9").removeClass("active");
         jQuery("#section10").addClass("active");
     }
-    FORM_TRACK_PATH.push("section9");
+    Form_Data.push("section9");
 }
 
 function onClickSection10(val) {
     console.log(val);
     howManayBedroomsDoYouHave = val;
     sessionStorage.setItem("howManayBedroomsDoYouHave", howManayBedroomsDoYouHave);
-    BACK_SECTION_NAMES["section11"] = "section10";
+    Back_Button["section11"] = "section10";
     jQuery("#section10").hide();
     jQuery("#section11").show();
     jQuery("#section10").removeClass("active");
     jQuery("#section11").addClass("active");
-    FORM_TRACK_PATH.push("section10");
+    Form_Data.push("section10");
 }
 
 function onClickSection11(val) {
     console.log(val);
     howManyBathtubsDoYouHave = val;
     sessionStorage.setItem("howManyBathtubsDoYouHave", howManyBathtubsDoYouHave);
-    BACK_SECTION_NAMES["section12"] = "section11";
+    Back_Button["section12"] = "section11";
 
     jQuery("#section11").hide();
     jQuery("#section12").show();
     jQuery("#section11").removeClass("active");
     jQuery("#section12").addClass("active");
-    FORM_TRACK_PATH.push("section11");
+    Form_Data.push("section11");
 }
 
 function onClickSection12(val) {
     console.log(val);
     howManyShowersDoYouHave = val;
     sessionStorage.setItem("howManyShowersDoYouHave", howManyShowersDoYouHave);
-    BACK_SECTION_NAMES["section13"] = "section12";
+    Back_Button["section13"] = "section12";
     jQuery("#section12").hide();
     jQuery("#section13").show();
     jQuery("#section12").removeClass("active");
     jQuery("#section13").addClass("active");
-    FORM_TRACK_PATH.push("section12");
+    Form_Data.push("section12");
 }
 
 function onClickSection13(val) {
@@ -261,44 +261,44 @@ function onClickSection13(val) {
     flueComeFrom = val;
     sessionStorage.setItem("flueComeFrom", flueComeFrom);
     if (val == "Wall") {
-        BACK_SECTION_NAMES["section14"] = "section13";
+        Back_Button["section14"] = "section13";
         jQuery("#section13").hide();
         jQuery("#section14").show();
         jQuery("#section13").removeClass("active");
         jQuery("#section14").addClass("active");
         extraFlueCharges = 0;
     } else if (val == "Roof") {
-        BACK_SECTION_NAMES["section17"] = "section13";
+        Back_Button["section17"] = "section13";
         jQuery("#section13").hide();
         jQuery("#section16").show();
         jQuery("#section13").removeClass("active");
         jQuery("#section16").addClass("active");
         extraFlueCharges = 474.4;
     }
-    FORM_TRACK_PATH.push("section13");
+    Form_Data.push("section13");
 }
 
 function onClickSection14(val) {
     console.log(val);
     flue30cm = val;
     sessionStorage.setItem("flue30cm", flue30cm);
-    BACK_SECTION_NAMES["section14"] = "section13";
+    Back_Button["section14"] = "section13";
     jQuery("#section14").hide();
     jQuery("#section15").show();
     jQuery("#section14").removeClass("active");
     jQuery("#section15").addClass("active");
-    FORM_TRACK_PATH.push("section14");
+    Form_Data.push("section14");
 }
 function onClickSection15(val) {
     console.log(val);
     underTheFlue = val;
     sessionStorage.setItem("underTheFlue", underTheFlue);
-    BACK_SECTION_NAMES["section16"] = "section15";
+    Back_Button["section16"] = "section15";
     jQuery("#section15").hide();
     jQuery("#section16").show();
     jQuery("#section15").removeClass("active");
     jQuery("#section16").addClass("active");
-    FORM_TRACK_PATH.push("section15");
+    Form_Data.push("section15");
 }
 
 function onClickFormSubmit() {
@@ -352,7 +352,7 @@ function onClickFormSubmit() {
         document.getElementById('emailaddress').innerHTML = '** @ Invialid Position. '
         return false;
     }
-    if(emailaddress.charAt(emailaddress.length-4) != "." && emailaddress.charAt(emailaddress.length-3)!='.')
+    if((emailaddress.charAt(emailaddress.length-4) != "." && emailaddress.charAt(emailaddress.length-3)!='.'))
     {
         document.getElementById('emailaddress').innerHTML = '** . Invialid Position. '
         return false;
@@ -386,7 +386,7 @@ function onBackClick(backFrom, backTo) {
     jQuery("#section" + backFrom).hide();
     jQuery("#section" + backFrom).removeClass("active");
 
-    let backToNew = FORM_TRACK_PATH.pop();
+    let backToNew = Form_Data.pop();
     jQuery("#" + backToNew).show();
     jQuery("#" + backToNew).addClass("active");
 }

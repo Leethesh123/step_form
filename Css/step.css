@@ -262,3 +262,62 @@ body, button, input, select, textarea {
   flex-direction: column;
   align-items: stretch;
 }
+
+.boiler-order-answer .order-button-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #3998e5;
+}
+
+.boiler-order-answer .boiler-order-answer-numeric {
+  flex-direction: row;
+}
+
+.boiler-order-answer .order-button.numeric {
+  margin: 0.25rem;
+}
+
+.boiler-order-answer .order-button.numeric {
+  padding-left: 0;
+}
+
+.boiler-order-answer .order-button-sm {
+  width: 20px;
+  height: auto;
+}
+
+.boiler-order-answer .order-button .order-button-sm {
+  margin: 0.5rem;
+  font-size: 11px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.boiler-order-answer .order-button {
+  margin: 0.5rem;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  width: 12em;
+  height: 12em;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.boiler-order-answer .order-button-12 {
+  margin: 0.5rem;
+  font-size: 11px;
+  background-size: cover;
+  box-shadow: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-position: center;
+  padding: 0;
+  width: 12em;
+  flex-direction: column;
+  align-items: stretch;
+}

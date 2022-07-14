@@ -291,27 +291,27 @@
 						<h2>How many <span class="hd_clr">bedrooms</span> do you have?</h2>
 					</div>
 					<div class="boiler-order-answer boiler-order-answer-numeric">
-						<button onclick="onClickSection10('1')"  class="order-button order-button-sm numeric 1">
+						<button onclick="onClickSection10('1')"  class="order-button-12 order-button-sm numeric  1">
 							<div class="order-button-number">1</div>
 						</button>
 						
-						<button onclick="onClickSection10('2')"  class="order-button order-button-sm numeric 2">
+						<button onclick="onClickSection10('2')"  class="order-button-12 order-button-sm numeric  2">
 							<div class="order-button-number">2</div>
 						</button>
 						
-						<button onclick="onClickSection10('3')"  class="order-button order-button-sm numeric 3">
+						<button onclick="onClickSection10('3')"  class="order-button-12 order-button-sm numeric  3">
 							<div class="order-button-number">3</div>
 						</button>
 						
-						<button onclick="onClickSection10('4')"  class="order-button order-button-sm numeric 4">
+						<button onclick="onClickSection10('4')"  class="order-button-12 order-button-sm numeric  4">
 							<div class="order-button-number">4</div>
 						</button>
 						
-						<button onclick="onClickSection10('5')"  class="order-button order-button-sm numeric 5">
+						<button onclick="onClickSection10('5')"  class="order-button-12 order-button-sm numeric  5">
 							<div class="order-button-number">5</div>
 						</button>
 						
-						<button onclick="onClickSection10('6')"  class="order-button order-button-sm numeric 6">
+						<button onclick="onClickSection10('6')"  class="order-button-12 order-button-sm numeric  6">
 							<div class="order-button-number">6</div>
 						</button>
 					</div>
@@ -325,19 +325,19 @@
 						<h2>How many <span class="hd_clr">bathtubs</span>, or plan to have in the future?</h2>
 					</div>
 					<div class="boiler-order-answer boiler-order-answer-numeric">
-						<button  onclick="onClickSection11('0')"  class="order-button order-button-sm numeric 0">
+						<button  onclick="onClickSection11('0')"  class="order-button-12 order-button-sm numeric 0">
 							<div class="order-button-number">0</div>
 						</button>
 						
-						<button onclick="onClickSection11('1')" class="order-button order-button-sm numeric 1">
+						<button onclick="onClickSection11('1')" class="order-button-12 order-button-sm numeric  1">
 							<div class="order-button-number">1</div>
 						</button>
 						
-						<button onclick="onClickSection11('2')" class="order-button order-button-sm numeric 2">
+						<button onclick="onClickSection11('2')" class="order-button-12 order-button-sm numeric  2">
 							<div class="order-button-number">2</div>
 						</button>
 						
-						<button onclick="onClickSection11('3')" class="order-button order-button-sm numeric 3">
+						<button onclick="onClickSection11('3')" class="order-button-12 order-button-sm numeric  3">
 							<div class="order-button-number">3</div>
 						</button>
 					</div>
@@ -351,19 +351,19 @@
 						<h2>Do you have any <span class="hd_clr">separate showers</span>?</h2>
 					</div>
 					<div class="boiler-order-answer boiler-order-answer-numeric">
-						<button onclick="onClickSection12('0')" class="order-button order-button-sm numeric 0">
+						<button onclick="onClickSection12('0')" class="order-button-12 order-button-sm numeric  0">
 							<div class="order-button-number">0</div>
 						</button>
 						
-						<button onclick="onClickSection12('1')" class="order-button order-button-sm numeric 1">
+						<button onclick="onClickSection12('1')" class="order-button-12 order-button-sm numeric  1">
 							<div class="order-button-number">1</div>
 						</button>
 						
-						<button onclick="onClickSection12('2')" class="order-button order-button-sm numeric 2">
+						<button onclick="onClickSection12('2')" class="order-button-12 order-button-sm numeric  2">
 							<div class="order-button-number">2</div>
 						</button>
 						
-						<button onclick="onClickSection12('3')" class="order-button order-button-sm numeric 3">
+						<button onclick="onClickSection12('3')" class="order-button-12 order-button-sm numeric  3">
 							<div class="order-button-number">3</div>
 						</button>
 					</div>
@@ -431,7 +431,7 @@
 			
 
 			<section class="boiler-order-step hear-about-section" id="section16" style="display:none"  >
-				<form onsubmit="onClickFormSubmit()">
+				<form onsubmit="return onClickFormSubmit()">
 					<div class="order-container txt-align-center">
 						<div class="boiler-order-question">
 							<h2>Your <span class="hd_clr">boiler </span>options are now available</h2>
@@ -457,268 +457,9 @@
 				<a class="back_step_button" onclick="onBackClick(16,15)"  ><i class="fas fa-caret-left"></i> Back</a>
 				<button type="submit" class="btn btn-primary">Submit</button>
 			</section>
-			
-			<!-- <section class="boiler-order-step" id="section18" style="display:none">
-				<div class="order-container txt-align-center">
-					<div class="boiler-order-question">
-						<h2>Your <span class="hd_clr">boiler </span>options are now available</h2>
-						<p>To display your boiler choices, prices and finance options we simply require the below information:</p>
-					</div>
-					<div class="boiler-order-answer fd_col">
-						<div id="boilerQuoteForm" class="boiler-quote-form-fields">
-							<input id="firstname" type="text" placeholder="Enter First Name" required />
-							<div id="firstname-error" class="form_required_error">Please enter your first name.</div>
-						</div>
-						<div class="boiler-quote-form-fields">
-							<input id="lastname" type="text" placeholder="Enter Last Name" required />
-							<div id="lastname-error" class="form_required_error">Please enter your last name.</div>
-						</div>
-						<div class="boiler-quote-form-fields">
-							<input id="emailaddress" type="email" placeholder="Enter Email Address" required>
-							<div id="emailaddress-error" class="form_required_error">Please enter your email address.</div>
-						</div>
-						<div class="boiler-quote-form-fields">
-							<input id="phonenumber" type="tel" placeholder="Enter Phone Number" required>
-							<div id="phonenumber-error" class="form_required_error">Please enter your phone number.</div>
-						</div>
-						
-						<div class="ourPromiseBox">
-							<h3>Our promise to you:</h3>
-							<ul class="promiseList">
-								<li><i class="fa-solid fa-check"></i> We promise we won’t inundate you</li>
-								<li><i class="fa-solid fa-check"></i> We’ll keep it relevant</li>
-								<li><i class="fa-solid fa-check"></i> We’ll never share your details</li>
-							</ul>							
-						</div>
-						<div class="boiler-quote-form-button">
-							<input type="button" class="formnextbutton" value="Show Boilers" onclick="onClickSection17()" />
-							<div id="qf_loader" class="form_loader"></div>
-						</div>
-					</div>
-				</div>
-				<a class="back_step_button" onclick="onBackClick(18,17)"  ><i class="fas fa-caret-left"></i> Back</a>
-			</section> -->
-
-
-
-			<section class="boiler-order-step" id="section17" style="display:none">
-				<div class="order-container txt-align-center">
-					<div class="boiler-order-answer">
-						<form class="bq_postcode4u-form" name="" action="post" target="#">							
-							<div calss="form_information">
-								company   <input type="text" value="" id="company"/>
-								address 1 <input type="text" value="" id="address1"/>
-								address 2 <input type="text" value="" id="address2"/>
-								town <input type="text" value="" id="town"/>
-								county <input type="text" value="" id="county"/>
-							</div>
-						</form>
-					</div>
-					<p><span class="p-question"><i>?</i> This is to check we cover your area.</span></p>
-				</div>
-				<a class="back_step_button" onclick="onBackClick(17,16)"  ><i class="fas fa-caret-left"></i> Back</a>
-			</section>
 		</main>
- 
- 
 	</div>
 	</div><!-- #content -->
 </div><!-- #page -->
-<script>
-	jQuery(document).ready(function( $ ){
-		 jQuery('.homeSurveyOutBtn').click(function(){
-			 
-		 jQuery('#year_warranty1').val(0);
-		 jQuery('#ProName1').val(0);
-		 jQuery('#ProductId1').val(0);
-		 jQuery('#prolink1').val(0);
-		 jQuery('#FullName').val(sessionStorage.getItem("firstname"));
-		 
-			jQuery("#EMail").val(sessionStorage.getItem("emailaddress"))
-	
-			jQuery("#PhoneNum").val(sessionStorage.getItem("phonenumber"))
-		 // jQuery('#setEmail1').val(sessionStorage.getItem("emailaddress"));
-		 // jQuery('#MObNo1').val(sessionStorage.getItem("phonenumber"));
-			jQuery("#Address").val(sessionStorage.getItem("address"));
-					//   jQuery("#city").val(sessionStorage.getItem("city"));
-			jQuery("#PostcodeNum").val(sessionStorage.getItem("postcode"));
-	//    let priceIsxk = jQuery("#product" + id + "_price").text();
-		 jQuery('#Product_Price1').val(0);
-		 jQuery("#checkBoxError").css('display', 'none');
-		 jQuery('#myModal23').show();
-			
-		 });
-	});</script>
-
-<script>
-	/* validation for quote form */
-	
-	
-	jQuery(document).ready(function( $ ){
-			// Your code in here
-		jQuery("#gform_submit_button_4").addClass("disable-click");
-		jQuery("#gform_submit_button_4").attr('disabled', 'disabled');
-	
-	
-	
-	jQuery("#input_4_2").blur( function(){
-		jQuery('#CustomePhoneNumId').remove();
-		 Phone1 = jQuery("#input_4_2").val();
-																/* Old API */
-									if(Phone1.length > 9){
-																if( Phone1 === '9876543210' ){
-																			resetsubmit_btn();
-																}else{
-																		jQuery.getJSON("https://api.veriphone.io/v2/verify?phone="+Phone1+"&key=288229EAEE0D49AFB7821B4E34B71384", function(data) {
-																				if(data.phone_valid === true){
-																						resetsubmit_btn();
-																				}else{
-																						jQuery("#input_4_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
-																				}
-																		});
-																}
-															}else{
-																jQuery("#input_4_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
-															}
-	});
-		
-	 
-		
-	});
-	
-	
-	
-	function resetsubmit_btn(){
-		jQuery("#gform_submit_button_4").removeClass("disable-click");
-		jQuery("#gform_submit_button_4").removeAttr('disabled');
-	}
-	
-	
-	
-	/* validation for quote form */
-	
-	
-	jQuery(document).ready(function( $ ){
-			// Your code in here
-		jQuery("#gform_submit_button_1").addClass("disable-click");
-		jQuery("#gform_submit_button_1").attr('disabled', 'disabled');
-	
-	
-	
-	jQuery("#input_1_2").blur( function(){
-		jQuery('#CustomePhoneNumId').remove();
-		 Phone1 = jQuery("#input_1_2").val();
-																/* Old API */
-									if(Phone1.length > 9){
-																if( Phone1 === '9876543210' ){
-																			resetsubmit_btn2();
-																}else{
-																		jQuery.getJSON("https://api.veriphone.io/v2/verify?phone="+Phone1+"&key=288229EAEE0D49AFB7821B4E34B71384", function(data) {
-																				if(data.phone_valid === true){
-																						resetsubmit_btn2();
-																				}else{
-																						jQuery("#input_1_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
-																				}
-																		});
-																}
-															}else{
-																jQuery("#input_1_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
-															}
-	});
-		
-	 
-		
-	});
-	
-	
-	
-	function resetsubmit_btn2(){
-		jQuery("#gform_submit_button_1").removeClass("disable-click");
-		jQuery("#gform_submit_button_1").removeAttr('disabled');
-	}
-	
-	
-	/* validation for quote form */
-	
-	
-	jQuery(document).ready(function( $ ){
-			// Your code in here
-		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").addClass("disable-click");
-		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").attr('disabled', 'disabled');
-	
-	
-	
-	jQuery("#ipt_fsqm_form_55_freetype_2_value").blur( function(){
-		jQuery('#CustomePhoneNumId1').remove();
-		 Phone1 = jQuery("#ipt_fsqm_form_55_freetype_2_value").val();
-																/* Old API */
-									if(Phone1.length > 9){
-																if( Phone1 === '9876543210' ){
-																			resetsubmit_btn3();
-																}else{
-																		jQuery.getJSON("https://api.veriphone.io/v2/verify?phone="+Phone1+"&key=288229EAEE0D49AFB7821B4E34B71384", function(data) {
-																				if(data.phone_valid === true){
-																						resetsubmit_btn3();
-																				}else{
-																						jQuery("#ipt_fsqm_form_55_freetype_2_value").after('<div id="CustomePhoneNumId1" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
-																				}
-																		});
-																}
-															}else{
-																jQuery("#ipt_fsqm_form_55_freetype_2_value").after('<div id="CustomePhoneNumId1" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
-															}
-	});
-		
-		jQuery("#ipt_fsqm_form_55_pinfo_1_value").blur(function(){
-				jQuery('#CustomeEmailId1').remove();
-					Email  = jQuery("#ipt_fsqm_form_55_pinfo_1_value").val();
-						 /* Post JSON Data*/
-						 let post_data = { email: Email }
-							/* Test Mail */
-						 if(Email !== 'test@webuildtrades.com'){
-											fetch("../wp-content/themes/generatepress_child/email_validator.php", {
-												method: "POST",
-												headers: { "Content-Type": "application/json" },
-												body: JSON.stringify(post_data),
-											 }).then((res) => {
-												 return res.json();
-											 }).then((data) => {
-															if (data.status == 'invalid') {  
-																		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").addClass("disable-click");
-											jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").attr('disabled', 'disabled');
-	
-																		jQuery("#ipt_fsqm_form_55_pinfo_1_value").after('<div id="CustomeEmailId1" class="formErrorContent"><span class="error-message">*Invalid email-id</span></div>');
-																}else{
-																		jQuery('#CustomeEmailId1').remove();
-																	resetsubmit_btn3();
-															 }
-											 }).catch((err) => {
-												console.log(err);
-											 });
-							 }else{
-								 jQuery('#CustomeEmailId1').remove();
-							 }
-		});
-		
-		
-	});
-	
-	
-	
-	function resetsubmit_btn3(){
-		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").removeClass("disable-click");
-		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").removeAttr('disabled');
-	}
-	
-	
-	</script>
-
-<!-- start Simple Custom CSS and JS -->
-<script>
-jQuery(document).ready(function(){
-  jQuery('#input_1_2' ).prop('type', 'tel');
-  jQuery('#input_4_2' ).prop('type', 'tel');
-  jQuery('#ipt_fsqm_form_53_freetype_1_value' ).prop('type', 'tel');
-});</script>
 </body>
 </html>
