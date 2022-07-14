@@ -1,0 +1,264 @@
+#ipt_fsqm_form_52_button_submit:hover {
+	background: #f6ba51;
+}
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h2 {
+  color: #0862ae;
+}
+
+.txt-align-center {
+  text-align: center;
+}
+
+.boiler-order-step .back_step_button:hover {
+  text-decoration: underline;
+}
+
+.boiler-order-step .back_step_button {
+  top: 50%;
+  bottom: auto;
+  left: 2rem;
+  transform: translate(0, -50%);
+}
+
+.boiler-order-step .back_step_button {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 10px;
+  color: #3998e5;
+}
+
+.grid-100 {
+  clear: both;
+  width: 100%;
+}
+
+.grid-parent {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: 50px;
+}
+
+form{
+  margin: 5px;
+  padding: 20px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.boiler-quote-form-fields input {
+  width: 70%;
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+body, button, input, select, textarea {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  text-transform: none;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+button, input {
+  overflow: visible;
+}
+
+input {
+  width: 100%;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.back_step_button{
+  font-size: 25px;
+}
+
+.mtsnb-text {
+	font-size: 18px !important;
+	font-family: poppins !important;
+}
+
+.boiler-order-answer {
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.order-container, .page-template-archive-products {
+  padding-bottom: 5% !important;
+}
+
+.site-content {
+  word-wrap: break-word;
+}
+
+.boiler-order-step.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.site-content {
+  word-wrap: break-word;
+}
+
+
+.boiler-order-answer {
+  padding: 2rem 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.boiler-order-answer .order-button {
+  margin: 0.5rem;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  width: 12em;
+  height: 12em;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.boiler-order-answer .order-button {
+  width: 100%;
+  font-size: 16px;
+  margin: 0.25rem 0;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 70px;
+  padding-left: 50px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+  transition: .3s;
+  color: #333333;
+  box-shadow: 0px 0px 7px 0px #ccc;
+}
+
+button {
+  appearance: auto;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0em;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonborder;
+  border-image: initial;
+}
+
+body, button, input, select, textarea {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  text-transform: none;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+body, button, input, select, textarea {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  text-transform: none;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+
+.boiler-order-answer .order-button-info {
+  margin-left: auto;
+  color: #3998e5;
+  width: 30px;
+  text-align: center;
+}
+
+.boiler-order-answer .order-button .order-button-label {
+  margin-top: auto;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.boiler-order-answer .order-button-helper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.boiler-order-answer {
+  flex-direction: row;
+  padding: 3rem;
+}
+
+.boiler-order-answer .order-button {
+  margin: 0.5rem;
+  font-size: 20px;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  width: 12em;
+  height: 12em;
+  flex-direction: column;
+  align-items: stretch;
+}

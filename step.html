@@ -1,0 +1,724 @@
+<!-- scripts -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <title>Boiler Quote MCR Gas</title>
+<meta name='robots' content='noindex, nofollow' />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="./quote.js"></script>
+<link rel="stylesheet" href="./Css/step.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- start Simple Custom CSS and JS -->
+<style id="mystickymenu" type="text/css">#mysticky-nav { width:100%; position: static; }#mysticky-nav.wrapfixed { position:fixed; left: 0px; margin-top:0px;  z-index: 99990; -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)"; filter: alpha(opacity=90); opacity:0.9; background-color: #f7f5e7;}#mysticky-nav.wrapfixed .myfixed{ background-color: #f7f5e7; position: relative;top: auto;left: auto;right: auto;}#mysticky-nav .myfixed { margin:0 auto; float:none; border:0px; background:none; max-width:100%; }</style>			<style type="text/css">
+																															</style>
+		   </head>
+
+<body >
+
+
+		<main id="main" class="site-main">
+
+			<section class="boiler-order-step active" id="section1" >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>What kind of <span class="hd_clr">fuel</span> does your boiler use?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection1('Mains Gas')"  class="order-button mains-gas" style="background-image: url('./img/mains-gas-icon.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">Mains Gas</div>
+							<div class="order-button-helper"></div>
+						</button>
+						
+						<button onclick="onClickSection1('LPG')" class="order-button enquiry" style="background-image: url('./img/LPG-icon.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">LPG</div>
+							<div class="order-button-helper"></div>
+						</button>
+						
+						<button onclick="onClickSection1('Oil')" class="order-button enquiry" style="background-image: url('./img/oil.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">Oil</div>
+							<div class="order-button-helper"></div>
+						</button>
+					</div>
+				</div>
+			</section>
+	
+			<section class="boiler-order-step" id="section2" style="display:none" >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>What <span class="hd_clr">type</span> of boiler do you have?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection2('Combi Boiler')" class="order-button combi-boiler" style="background-image: url('./img/combi-boiler.png')">
+							<div class="order-button-label">Combi Boiler</div>
+						</button>
+						
+						<button onclick="onClickSection2('Boiler with Tank')"  class="order-button boiler-with-tank" style="background-image: url('./img/boiler-with-tank.png')">
+							<div class="order-button-label">Boiler With Tank </div>
+						</button>
+						
+						<button onclick="onClickSection2('Back Boiler')"  class="order-button back-boiler" style="background-image: url('./img/back-boiler.png')">
+							<div class="order-button-label">Back Boiler</div>
+						</button>
+						
+						<button onclick="onClickSection2('No Boiler')"  class="order-button no-boiler" style="background-image: url('./img/no-boiler.png')">
+							<div class="order-button-label">No Boiler</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(2,1)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			<section class="boiler-order-step" id="section3" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Which type of <span class="hd_clr">hot water cylinder</span> do you have?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection3('Regular')"  class="order-button regular" style="background-image: url('./img/regular.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">Regular</div>
+						</button>
+						
+						<button onclick="onClickSection3('System')"  class="order-button system" style="background-image: url('./img/system.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">System</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(3,2)"><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section4" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Do you want to convert to a <span class="hd_clr">combi boiler</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button  onclick="onClickSection4('yes')"  class="order-button true" style="background-image: url('./img/yes.png')">
+							<div class="order-button-label">Yes, convert</div>
+						</button>
+						
+						<button  onclick="onClickSection4('no')"  class="order-button false" style="background-image: url('./img/no.png')">
+							<div class="order-button-label">Keep hot water cylinder</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(4,3)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			<section class="boiler-order-step" id="section4_1" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Do you want to upgrade to new <span class="hd_clr">unvented hot water cylinder</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button  onclick="onClickSection4_1('yes')"  class="order-button true" style="background-image: url('./img/yes.png')">
+							<div class="order-button-label">Yes, upgrade</div>
+							<div class="order-button-helper">
+								<ul class="p-question"> 
+									<li>Hot water at mains pressure</li>
+									<li>No risk of contamination as totally sealed system</li>
+									<li>Fast filling baths</li>
+									<li>Utilises existing pipe work</li>
+									<li>No need for extra water tanks in the loft</li>
+								</ul>
+							</div>
+						</button>
+						
+						<button  onclick="onClickSection4_1('no')"  class="order-button false" style="background-image: url('./img/no.png')">
+							<div class="order-button-label">No</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick('4_1',4)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			<section class="boiler-order-step" id="section5" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>How <span class="hd_clr">quickly</span> does water come out of your cold tap?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button   onclick="onClickSection5('fast')" class="order-button fast" style="background-image: url('./img/fast.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">Fast</div>
+						</button>
+						
+						<button  onclick="onClickSection5('average')" class="order-button average" style="background-image: url('./img/average.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">Average</div>
+						</button>
+						
+						<button onclick="onClickSection5('slow')" class="order-button slow" style="background-image: url('./img/slow.png')">
+							<div class="order-button-info">?</div>
+							<div class="order-button-label">Slow</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(5,4)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section6" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Do you want your new boiler in a <span class="hd_clr">different place</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button  onclick="onClickSection6('Yes')" class="order-button true" style="background-image: url('./img/yes.png')">
+							<div class="order-button-label">Yes</div>
+						</button>
+						
+						<button  onclick="onClickSection6('No')" class="order-button false" style="background-image: url('./img/no.png')">
+							<div class="order-button-label">No</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(6,5)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			<section class="boiler-order-step" id="section7" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Where is your <span class="hd_clr">current</span> boiler?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button   onclick="onClickSection7('Utility Room')" class="order-button utility-room" style="background-image: url('./img/utility-room.png')">
+							<div class="order-button-label">Utility Room</div>
+						</button>
+						
+						<button  onclick="onClickSection7('Kitchen')" class="order-button kitchen" style="background-image: url('./img/kitchen.png')">
+							<div class="order-button-label">Kitchen</div>
+						</button>
+						
+						<button  onclick="onClickSection7('Garage')" class="order-button garage" style="background-image: url('./img/garage.png')">
+							<div class="order-button-label">Garage</div>
+						</button>
+						
+						<button  onclick="onClickSection7('Airing Cupboard')" class="order-button airing-cupboard" style="background-image: url('./img/airing-cupboard.png')">
+							<div class="order-button-label">Airing Cupboard</div>
+						</button>
+						
+						<button  onclick="onClickSection7('Other')" class="order-button other" style="background-image: url('./img/other.png')">
+							<div class="order-button-label">Other</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(7,6)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section8" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Where would you want your <span class="hd_clr">new boiler</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button  onclick="onClickSection8('Same Room', 0 )" class="order-button in-the-same-room" style="background-image: url('./img/In-the-same-room.png')">
+							<div class="order-button-label">In the same room</div>
+						</button>
+						
+						<button  onclick="onClickSection8('Utility Room', 0 )" class="order-button utility-room" style="background-image: url('./img/utility-room.png')">
+							<div class="order-button-label">Utility Room</div>
+						</button>
+						
+						<button onclick="onClickSection8('Kitchen', 0 )" class="order-button kitchen" style="background-image: url('./img/kitchen.png')">
+							<div class="order-button-label">Kitchen</div>
+						</button>
+						
+						<button onclick="onClickSection8('Garage', 0 )" class="order-button garage" style="background-image: url('./img/garage.png')">
+							<div class="order-button-label">Garage</div>
+						</button>
+						
+						<button onclick="onClickSection8('Airing Cupboard', 0 )" class="order-button airing-cupboard" style="background-image: url('./img/airing-cupboard.png')">
+							<div class="order-button-label">Airing Cupboard</div>
+						</button>
+						
+						<button  onclick="onClickSection8('Bedroom', 0 )" class="order-button bedroom" style="background-image: url('./img/bedroom.png')">
+							<div class="order-button-label">Bedroom</div>
+						</button>
+						
+						<button onclick="onClickSection8('Loft or Attic', 0 )" class="order-button loft-or-attic" style="background-image: url('./img/airing-cupboard.png')">
+							<div class="order-button-label">Loft or Attic</div>
+						</button>
+						
+						<button onclick="onClickSection8('Somewhere else', 0 )" class="order-button enquiry" style="background-image: url('./img/other.png')">
+							<div class="order-button-label">Somewhere else</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(8,7)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section9" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Which of these best describes <span class="hd_clr">your home</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection9('Flat')" class="order-button flat" style="background-image: url('./img/flat.png')">
+							<div class="order-button-label">Flat</div>
+						</button>
+						
+						<button onclick="onClickSection9('Terraced')" class="order-button terraced" style="background-image: url('./img/terrace.png')">
+							<div class="order-button-label">Terraced</div>
+						</button>
+						
+						<button onclick="onClickSection9('Semi Detached')" class="order-button semi-detached" style="background-image: url('./img/semi-detached.png')">
+							<div class="order-button-label">Semi Detached</div>
+						</button>
+						
+						<button onclick="onClickSection9('Detached')" class="order-button detached" style="background-image: url('./img/detached.png')">
+							<div class="order-button-label">Detached</div>
+						</button>
+						
+						<button onclick="onClickSection9('Bungalow')" class="order-button bungalow" style="background-image: url('./img/bungalow.png')">
+							<div class="order-button-label">Bungalow</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(9,8)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			
+			<section class="boiler-order-step" id="section10" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>How many <span class="hd_clr">bedrooms</span> do you have?</h2>
+					</div>
+					<div class="boiler-order-answer boiler-order-answer-numeric">
+						<button onclick="onClickSection10('1')"  class="order-button order-button-sm numeric 1">
+							<div class="order-button-number">1</div>
+						</button>
+						
+						<button onclick="onClickSection10('2')"  class="order-button order-button-sm numeric 2">
+							<div class="order-button-number">2</div>
+						</button>
+						
+						<button onclick="onClickSection10('3')"  class="order-button order-button-sm numeric 3">
+							<div class="order-button-number">3</div>
+						</button>
+						
+						<button onclick="onClickSection10('4')"  class="order-button order-button-sm numeric 4">
+							<div class="order-button-number">4</div>
+						</button>
+						
+						<button onclick="onClickSection10('5')"  class="order-button order-button-sm numeric 5">
+							<div class="order-button-number">5</div>
+						</button>
+						
+						<button onclick="onClickSection10('6')"  class="order-button order-button-sm numeric 6">
+							<div class="order-button-number">6</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(10,9)" ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section11" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>How many <span class="hd_clr">bathtubs</span>, or plan to have in the future?</h2>
+					</div>
+					<div class="boiler-order-answer boiler-order-answer-numeric">
+						<button  onclick="onClickSection11('0')"  class="order-button order-button-sm numeric 0">
+							<div class="order-button-number">0</div>
+						</button>
+						
+						<button onclick="onClickSection11('1')" class="order-button order-button-sm numeric 1">
+							<div class="order-button-number">1</div>
+						</button>
+						
+						<button onclick="onClickSection11('2')" class="order-button order-button-sm numeric 2">
+							<div class="order-button-number">2</div>
+						</button>
+						
+						<button onclick="onClickSection11('3')" class="order-button order-button-sm numeric 3">
+							<div class="order-button-number">3</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(11,10)"  ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			<section class="boiler-order-step" id="section12" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Do you have any <span class="hd_clr">separate showers</span>?</h2>
+					</div>
+					<div class="boiler-order-answer boiler-order-answer-numeric">
+						<button onclick="onClickSection12('0')" class="order-button order-button-sm numeric 0">
+							<div class="order-button-number">0</div>
+						</button>
+						
+						<button onclick="onClickSection12('1')" class="order-button order-button-sm numeric 1">
+							<div class="order-button-number">1</div>
+						</button>
+						
+						<button onclick="onClickSection12('2')" class="order-button order-button-sm numeric 2">
+							<div class="order-button-number">2</div>
+						</button>
+						
+						<button onclick="onClickSection12('3')" class="order-button order-button-sm numeric 3">
+							<div class="order-button-number">3</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(12,11)"  ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section13" style="display:none"   > 
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Where does your <span class="hd_clr">flue</span> come out?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection13('Wall')" class="order-button wall" style="background-image: url('./img/wall.png')">
+							<div class="order-button-label">Wall</div>
+						</button>
+						
+						<button onclick="onClickSection13('Roof')" class="order-button roof" style="background-image: url('./img/roof.png')">
+							<div class="order-button-label">Roof</div>
+						</button>				
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(13,12)"  ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+			<section class="boiler-order-step" id="section14" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Is the flue <span class="hd_clr">30cm+</span> from a <span class="hd_clr">window</span> or <span class="hd_clr">door</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection14('Yes')" class="order-button yes" style="background-image: url('./img/Flue-30cm-yes.png')">
+							<div class="order-button-label">Yes</div>
+						</button>
+						
+						<button onclick="onClickSection14('No')"  class="order-button no" style="background-image: url('./img/Flue-30cm-No.png')">
+							<div class="order-button-label">No</div>
+						</button>
+						
+						<button onclick="onClickSection14('Unsure')"  class="order-button unsure" style="background-image: url('./img/other.png')">
+							<div class="order-button-label">Unsure</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(14,13)"   ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+	
+			<section class="boiler-order-step" id="section15" style="display:none"  >
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Is the flue under any form of <span class="hd_clr">outside structure/roof</span>?</h2>
+					</div>
+					<div class="boiler-order-answer">
+						<button onclick="onClickSection15('No')" class="order-button no" style="background-image: url('./img/Flue-Under-NO.png')">
+							<div class="order-button-label">No</div>
+						</button>
+						
+						<button onclick="onClickSection15('Yes')"  class="order-button yes" style="background-image: url('./img/Flue-Under-YES.png')">
+							<div class="order-button-label">Yes</div>
+						</button>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(15,14)"   ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+			
+
+			<section class="boiler-order-step hear-about-section" id="section16" style="display:none"  >
+				<form onsubmit="onClickFormSubmit()">
+					<div class="order-container txt-align-center">
+						<div class="boiler-order-question">
+							<h2>Your <span class="hd_clr">boiler </span>options are now available</h2>
+						</div>
+						<div class="fd_col">
+							<div id="boilerQuoteForm" class="boiler-quote-form-fields">
+								<input id="firstname" type="text" placeholder="Enter First Name" required />
+							</div>
+							<br>
+							<div class="boiler-quote-form-fields">
+								<input id="lastname" type="text" placeholder="Enter Last Name" required />
+							</div>
+							<br>
+							<div class="boiler-quote-form-fields">
+								<input id="emailaddress" type="email" placeholder="Enter Email Address" required>
+							</div>
+							<br>
+							<div class="boiler-quote-form-fields">
+								<input id="phonenumber" type="tel" placeholder="Enter Phone Number" required>
+							</div>
+					</div>
+				</form>
+				<a class="back_step_button" onclick="onBackClick(16,15)"  ><i class="fas fa-caret-left"></i> Back</a>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</section>
+			
+			<!-- <section class="boiler-order-step" id="section18" style="display:none">
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-question">
+						<h2>Your <span class="hd_clr">boiler </span>options are now available</h2>
+						<p>To display your boiler choices, prices and finance options we simply require the below information:</p>
+					</div>
+					<div class="boiler-order-answer fd_col">
+						<div id="boilerQuoteForm" class="boiler-quote-form-fields">
+							<input id="firstname" type="text" placeholder="Enter First Name" required />
+							<div id="firstname-error" class="form_required_error">Please enter your first name.</div>
+						</div>
+						<div class="boiler-quote-form-fields">
+							<input id="lastname" type="text" placeholder="Enter Last Name" required />
+							<div id="lastname-error" class="form_required_error">Please enter your last name.</div>
+						</div>
+						<div class="boiler-quote-form-fields">
+							<input id="emailaddress" type="email" placeholder="Enter Email Address" required>
+							<div id="emailaddress-error" class="form_required_error">Please enter your email address.</div>
+						</div>
+						<div class="boiler-quote-form-fields">
+							<input id="phonenumber" type="tel" placeholder="Enter Phone Number" required>
+							<div id="phonenumber-error" class="form_required_error">Please enter your phone number.</div>
+						</div>
+						
+						<div class="ourPromiseBox">
+							<h3>Our promise to you:</h3>
+							<ul class="promiseList">
+								<li><i class="fa-solid fa-check"></i> We promise we won’t inundate you</li>
+								<li><i class="fa-solid fa-check"></i> We’ll keep it relevant</li>
+								<li><i class="fa-solid fa-check"></i> We’ll never share your details</li>
+							</ul>							
+						</div>
+						<div class="boiler-quote-form-button">
+							<input type="button" class="formnextbutton" value="Show Boilers" onclick="onClickSection17()" />
+							<div id="qf_loader" class="form_loader"></div>
+						</div>
+					</div>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(18,17)"  ><i class="fas fa-caret-left"></i> Back</a>
+			</section> -->
+
+
+
+			<section class="boiler-order-step" id="section17" style="display:none">
+				<div class="order-container txt-align-center">
+					<div class="boiler-order-answer">
+						<form class="bq_postcode4u-form" name="" action="post" target="#">							
+							<div calss="form_information">
+								company   <input type="text" value="" id="company"/>
+								address 1 <input type="text" value="" id="address1"/>
+								address 2 <input type="text" value="" id="address2"/>
+								town <input type="text" value="" id="town"/>
+								county <input type="text" value="" id="county"/>
+							</div>
+						</form>
+					</div>
+					<p><span class="p-question"><i>?</i> This is to check we cover your area.</span></p>
+				</div>
+				<a class="back_step_button" onclick="onBackClick(17,16)"  ><i class="fas fa-caret-left"></i> Back</a>
+			</section>
+		</main>
+ 
+ 
+	</div>
+	</div><!-- #content -->
+</div><!-- #page -->
+<script>
+	jQuery(document).ready(function( $ ){
+		 jQuery('.homeSurveyOutBtn').click(function(){
+			 
+		 jQuery('#year_warranty1').val(0);
+		 jQuery('#ProName1').val(0);
+		 jQuery('#ProductId1').val(0);
+		 jQuery('#prolink1').val(0);
+		 jQuery('#FullName').val(sessionStorage.getItem("firstname"));
+		 
+			jQuery("#EMail").val(sessionStorage.getItem("emailaddress"))
+	
+			jQuery("#PhoneNum").val(sessionStorage.getItem("phonenumber"))
+		 // jQuery('#setEmail1').val(sessionStorage.getItem("emailaddress"));
+		 // jQuery('#MObNo1').val(sessionStorage.getItem("phonenumber"));
+			jQuery("#Address").val(sessionStorage.getItem("address"));
+					//   jQuery("#city").val(sessionStorage.getItem("city"));
+			jQuery("#PostcodeNum").val(sessionStorage.getItem("postcode"));
+	//    let priceIsxk = jQuery("#product" + id + "_price").text();
+		 jQuery('#Product_Price1').val(0);
+		 jQuery("#checkBoxError").css('display', 'none');
+		 jQuery('#myModal23').show();
+			
+		 });
+	});</script>
+
+<script>
+	/* validation for quote form */
+	
+	
+	jQuery(document).ready(function( $ ){
+			// Your code in here
+		jQuery("#gform_submit_button_4").addClass("disable-click");
+		jQuery("#gform_submit_button_4").attr('disabled', 'disabled');
+	
+	
+	
+	jQuery("#input_4_2").blur( function(){
+		jQuery('#CustomePhoneNumId').remove();
+		 Phone1 = jQuery("#input_4_2").val();
+																/* Old API */
+									if(Phone1.length > 9){
+																if( Phone1 === '9876543210' ){
+																			resetsubmit_btn();
+																}else{
+																		jQuery.getJSON("https://api.veriphone.io/v2/verify?phone="+Phone1+"&key=288229EAEE0D49AFB7821B4E34B71384", function(data) {
+																				if(data.phone_valid === true){
+																						resetsubmit_btn();
+																				}else{
+																						jQuery("#input_4_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
+																				}
+																		});
+																}
+															}else{
+																jQuery("#input_4_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
+															}
+	});
+		
+	 
+		
+	});
+	
+	
+	
+	function resetsubmit_btn(){
+		jQuery("#gform_submit_button_4").removeClass("disable-click");
+		jQuery("#gform_submit_button_4").removeAttr('disabled');
+	}
+	
+	
+	
+	/* validation for quote form */
+	
+	
+	jQuery(document).ready(function( $ ){
+			// Your code in here
+		jQuery("#gform_submit_button_1").addClass("disable-click");
+		jQuery("#gform_submit_button_1").attr('disabled', 'disabled');
+	
+	
+	
+	jQuery("#input_1_2").blur( function(){
+		jQuery('#CustomePhoneNumId').remove();
+		 Phone1 = jQuery("#input_1_2").val();
+																/* Old API */
+									if(Phone1.length > 9){
+																if( Phone1 === '9876543210' ){
+																			resetsubmit_btn2();
+																}else{
+																		jQuery.getJSON("https://api.veriphone.io/v2/verify?phone="+Phone1+"&key=288229EAEE0D49AFB7821B4E34B71384", function(data) {
+																				if(data.phone_valid === true){
+																						resetsubmit_btn2();
+																				}else{
+																						jQuery("#input_1_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
+																				}
+																		});
+																}
+															}else{
+																jQuery("#input_1_2").after('<div id="CustomePhoneNumId" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
+															}
+	});
+		
+	 
+		
+	});
+	
+	
+	
+	function resetsubmit_btn2(){
+		jQuery("#gform_submit_button_1").removeClass("disable-click");
+		jQuery("#gform_submit_button_1").removeAttr('disabled');
+	}
+	
+	
+	/* validation for quote form */
+	
+	
+	jQuery(document).ready(function( $ ){
+			// Your code in here
+		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").addClass("disable-click");
+		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").attr('disabled', 'disabled');
+	
+	
+	
+	jQuery("#ipt_fsqm_form_55_freetype_2_value").blur( function(){
+		jQuery('#CustomePhoneNumId1').remove();
+		 Phone1 = jQuery("#ipt_fsqm_form_55_freetype_2_value").val();
+																/* Old API */
+									if(Phone1.length > 9){
+																if( Phone1 === '9876543210' ){
+																			resetsubmit_btn3();
+																}else{
+																		jQuery.getJSON("https://api.veriphone.io/v2/verify?phone="+Phone1+"&key=288229EAEE0D49AFB7821B4E34B71384", function(data) {
+																				if(data.phone_valid === true){
+																						resetsubmit_btn3();
+																				}else{
+																						jQuery("#ipt_fsqm_form_55_freetype_2_value").after('<div id="CustomePhoneNumId1" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
+																				}
+																		});
+																}
+															}else{
+																jQuery("#ipt_fsqm_form_55_freetype_2_value").after('<div id="CustomePhoneNumId1" class="formErrorContent"><span class="error-message">*Invalid mobile number</span></div>');
+															}
+	});
+		
+		jQuery("#ipt_fsqm_form_55_pinfo_1_value").blur(function(){
+				jQuery('#CustomeEmailId1').remove();
+					Email  = jQuery("#ipt_fsqm_form_55_pinfo_1_value").val();
+						 /* Post JSON Data*/
+						 let post_data = { email: Email }
+							/* Test Mail */
+						 if(Email !== 'test@webuildtrades.com'){
+											fetch("../wp-content/themes/generatepress_child/email_validator.php", {
+												method: "POST",
+												headers: { "Content-Type": "application/json" },
+												body: JSON.stringify(post_data),
+											 }).then((res) => {
+												 return res.json();
+											 }).then((data) => {
+															if (data.status == 'invalid') {  
+																		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").addClass("disable-click");
+											jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").attr('disabled', 'disabled');
+	
+																		jQuery("#ipt_fsqm_form_55_pinfo_1_value").after('<div id="CustomeEmailId1" class="formErrorContent"><span class="error-message">*Invalid email-id</span></div>');
+																}else{
+																		jQuery('#CustomeEmailId1').remove();
+																	resetsubmit_btn3();
+															 }
+											 }).catch((err) => {
+												console.log(err);
+											 });
+							 }else{
+								 jQuery('#CustomeEmailId1').remove();
+							 }
+		});
+		
+		
+	});
+	
+	
+	
+	function resetsubmit_btn3(){
+		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").removeClass("disable-click");
+		jQuery("#ipt_fsqm_form_55_design_0 .ipt_uif_column_inner .ipt-eform-material-button-container .eform-button-container-inner a").removeAttr('disabled');
+	}
+	
+	
+	</script>
+
+<!-- start Simple Custom CSS and JS -->
+<script>
+jQuery(document).ready(function(){
+  jQuery('#input_1_2' ).prop('type', 'tel');
+  jQuery('#input_4_2' ).prop('type', 'tel');
+  jQuery('#ipt_fsqm_form_53_freetype_1_value' ).prop('type', 'tel');
+});</script>
+</body>
+</html>
